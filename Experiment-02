@@ -15,7 +15,7 @@ Accepting Connection (accept()): Blocks execution until an incoming connection a
 Data Transfer (read() / send()): Receives data buffers from client and echoes them back reliably.
 Closing Connection (close()): Terminates client and listening sockets via the TCP four-wave termination sequence.
 Extracted Source Code
-File: server1222.c
+File: server1218.c
 
 #include <stdio.h>
 #include <string.h>
@@ -100,9 +100,9 @@ How to Execute in Ubuntu Terminal
 Step 1: Create the Source File
 Open the file in gedit, paste the C code provided above, save and close:
 
-gedit server1222.c
+gedit server1218.c
 Step 2: Compile the Program
-gcc server1222.c -o server
+gcc server1218.c -o server
 Step 3: Run the TCP Server (Terminal 1)
 ./server
 Expected Output:
@@ -111,7 +111,7 @@ TCP Echo Server listening on port 10218...
 Step 4: Test with a Client (Terminal 2)
 In a second terminal window, connect via the TCP client or Netcat:
 
-nc 127.0.0.1 10222
+nc 127.0.0.1 10218
 Observed Server Output:
 
 Received: hello
